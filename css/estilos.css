@@ -1,0 +1,242 @@
+html {
+  background-image: url("../img/fondo.jpg");
+    background-color: #cccccc;
+}
+body {
+  background-image: url("../img/patron6.jpg");
+}
+
+
+
+a{
+    text-decoration: none; 
+}
+
+li{
+ background: #002A6A;
+    border-left: 0.5em solid;
+    display: inline-block;
+    padding: 6px 30px;
+    text-align: center;
+    }
+
+#encabezado {
+    font-family: verdana;
+    font-size:22px; 
+    background-color: #002A6A;
+    text-align: center;
+    color: aliceblue;
+} 
+
+#parrafo {
+    font-family: verdana;
+    font-size:14px; 
+    text-align: left;
+    color: black;
+}   
+#parrafo2 {
+    font-family: AR DESTINE;
+    font-size:20px; 
+    text-align: left;
+    color: floralwhite;
+}  
+
+#parrafo3 {
+    font-family: Century;
+    font-size:18px; 
+    text-align: justify;
+    color: black;
+}   
+
+
+#imagen {
+    width:300px;
+    height:300px;
+    border-style: dashed;
+    border-width: 10px;
+    border-radius: 12px;
+  }
+#imagen2 {
+    width:300px;
+    height:300px;
+    border-style: inset;
+    border-width: 10px;
+    border-radius: 12px;
+  }
+
+.txtgaleria {
+    font-family: century gothic;
+    font-size: 20px;
+    color: black;
+    text-align: CENTER;
+}
+
+.imggaleria {
+    border-width: 5px;
+    border-radius: 25px;
+    padding: 0 px;
+}
+
+.zoom img{
+    height: 100px;
+    width: 150px;
+    margin: 0px 0;
+    transition: all 1s ease;
+}
+
+.zoom img:hover {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto;
+}
+        
+    
+}
+
+#header{
+  width: 1000px;
+    height: 200px;
+}
+
+header img{
+  width: 100%;
+    height: auto;
+}
+
+
+
+.button.white{
+  background: #002A6A;
+  border-color: #dedede #d8d8d8 #d3d3d3;
+  box-shadow: 0 0px 0px #eaeaea, inset 0 1px 0 #002A6A;
+  color: #555;
+  text-shadow: 0 1px 0 #fff;
+  background: -moz-linear-gradient(top,  #002A6A, #f0f0f0);
+  background: -webkit-linear-gradient(top,  #002A6A, #f0f0f0);
+  background: o-linear-gradient(top,  #002A6A, #f0f0f0);
+  background: ms-linear-gradient(top,  #002A6A, #f0f0f0);
+  background: linear-gradient(top,  #002A6A, #f0f0f0);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#002A6A', endColorstr='#f0f0f0');
+}
+
+#izq {
+width: 95%;
+float:left;
+background-color: aliceblue;
+padding: 10px;
+text-align: left;
+margin:5px;
+box-sizing: border-box;
+
+}
+
+#dere {
+padding: 5px;
+float:right;
+background-color: aliceblue;
+box-sizing: border-box;
+
+}
+
+aside {
+width: 100px;
+height: 300px;
+float: right;
+padding: 10px;
+}
+    
+footer{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    background: #002A6A;
+    padding: 20px;
+}
+
+@media screen and (max-width:1000px){
+    header{width:100%;}
+    #izq{width: 100%;}
+    #der{width: 100%;}
+}
+
+#contenedor{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+    background: aliceblue;
+    }
+
+.slider {
+    width: 1000px;
+    height:200px;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: cambio 10s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+    
+}
+
+.banner {
+    width: 105px;
+    height: 310px;
+    
+    margin: auto;
+    
+    background-size: 100% 100%;
+    
+    animation: banner 10s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes banner {
+    0%, 30% {
+        background-image: url(img/BANNER1.png);
+        opacity: 1;
+    }
+    31%, 34% {
+        opacity: 0.1;
+    }
+    35%,65% {
+        background-image: url(img/BANNER2.png);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100%{
+        opacity: 1;
+        background-image: url(img/BANNER3.png);
+    }
+    
+}
