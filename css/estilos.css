@@ -2,6 +2,10 @@ html {
     background-color: #f2f2f2;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     background-color: #002A6A;
     display: flex;
@@ -36,8 +40,15 @@ a{
 #encabezado {
     font-family: verdana;
     font-size:22px;
+    font-weight: 600;
     text-align: center;
     color: #002A6A;
+}
+
+#encabezado > h3 {
+    display: flex;
+    font-size: 22px;
+    padding-left: 16px;
 }
 
 #parrafo {
@@ -59,6 +70,10 @@ a{
     text-align: justify;
     color: black;
 }   
+
+#parrafo3 > p {
+    padding-left: 16px;
+}
 
 
 #imagen {
@@ -153,8 +168,6 @@ footer{
 }
 
 #contenedor{
-    width:90%;
-    max-width:1000px;
     margin:0 auto;
     overflow:hidden;
     background: aliceblue;
