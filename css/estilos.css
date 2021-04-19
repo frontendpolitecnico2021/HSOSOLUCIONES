@@ -1,32 +1,44 @@
 html {
-  background-image: url("../img/fondo.jpg");
-    background-color: #cccccc;
-}
-body {
-  background-image: url("../img/patron6.jpg");
+    background-color: #f2f2f2;
 }
 
+header {
+    background-color: #002A6A;
+    display: flex;
+    height: 100px;
+}
 
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    list-style: none;
+    width: 100%;
+    padding: 0px;
+    
+}
+
+li > button {
+    background-color: transparent;
+    border: 0px;
+    font-weight: 600;
+    color: #f2f2f2;
+}
+
+li > button > a {
+    color: #f2f2f2;
+}
 
 a{
     text-decoration: none; 
 }
 
-li{
- background: #002A6A;
-    border-left: 0.5em solid;
-    display: inline-block;
-    padding: 6px 30px;
-    text-align: center;
-    }
-
 #encabezado {
     font-family: verdana;
-    font-size:22px; 
-    background-color: #002A6A;
+    font-size:22px;
     text-align: center;
-    color: aliceblue;
-} 
+    color: #002A6A;
+}
 
 #parrafo {
     font-family: verdana;
@@ -89,9 +101,6 @@ li{
     width: 300px;
     margin: 0 auto;
 }
-        
-    
-}
 
 #header{
   width: 1000px;
@@ -101,22 +110,6 @@ li{
 header img{
   width: 100%;
     height: auto;
-}
-
-
-
-.button.white{
-  background: #002A6A;
-  border-color: #dedede #d8d8d8 #d3d3d3;
-  box-shadow: 0 0px 0px #eaeaea, inset 0 1px 0 #002A6A;
-  color: #555;
-  text-shadow: 0 1px 0 #fff;
-  background: -moz-linear-gradient(top,  #002A6A, #f0f0f0);
-  background: -webkit-linear-gradient(top,  #002A6A, #f0f0f0);
-  background: o-linear-gradient(top,  #002A6A, #f0f0f0);
-  background: ms-linear-gradient(top,  #002A6A, #f0f0f0);
-  background: linear-gradient(top,  #002A6A, #f0f0f0);
-  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#002A6A', endColorstr='#f0f0f0');
 }
 
 #izq {
@@ -168,11 +161,9 @@ footer{
     }
 
 .slider {
-    width: 1000px;
-    height:200px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
-    
 }
 
 .slider ul{
